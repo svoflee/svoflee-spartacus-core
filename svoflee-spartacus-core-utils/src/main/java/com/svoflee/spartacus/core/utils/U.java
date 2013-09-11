@@ -35,7 +35,6 @@ public final class U {
 
     public static void main(String[] args) {
         U.readExit();
-
     }
 
     /**
@@ -207,74 +206,6 @@ public final class U {
             p(o);
         }
     }
-
-    //
-    // public static Collection enumValueList(Class<Enum> enumClazz) {
-    // }
-
-    //
-    // public static boolean isLongEmpty(Long longNum) {
-    // if (longNum != null) {
-    // return false;
-    // }
-    // else {
-    // return true;
-    // }
-    // }
-    //
-    // public static boolean isDateEmpty(Date date) {
-    // if (date != null) {
-    // return false;
-    // }
-    // else {
-    // return true;
-    // }
-    // }
-    //
-    // public static void printBytes(byte[] byteValue) {
-    // String curString = "";
-    // for (byte element : byteValue) {
-    // curString = curString + element + " ";
-    // }
-    // log.info(curString + " lenght:" + byteValue.length);
-    //
-    // }
-    //
-    // public static String covertBytesToString(byte[] byteValue, String seperator) {
-    // String curString = "";
-    //
-    // for (byte element : byteValue) {
-    // curString = curString + element + seperator;
-    // }
-    // return curString;
-    //
-    // }
-    //
-    // public static void printList(List l) {
-    // for (int i = 0; i < l.size(); i++) {
-    // log.info("{}", l.get(i));
-    // }
-    // }
-
-    //
-    // public static Integer sumInteger(Integer num1, Integer num2) {
-    // int int1 = (num1 != null ? num1.intValue() : 0);
-    // int int2 = (num2 != null ? num2.intValue() : 0);
-    // return new Integer(int1 + int2);
-    // }
-    //
-    // public static void removeEqualObjects(Collection<File> allDataFiles) {
-    // // XXX:@@@@@重写该方法
-    // // for (int i = 0; i < allDataFiles.size(); i++) {
-    // // Object curOA = allDataFiles.get(i);
-    // // for (int j = i + 1; j < allDataFiles.size(); j++) {
-    // // Object curOB = allDataFiles.get(j);
-    // // if (curOA.equals(curOB)) {
-    // // allDataFiles.remove(j);
-    // // }
-    // // }
-    // // }
-    // }
 
     /**
      * 创建处理的标识码
