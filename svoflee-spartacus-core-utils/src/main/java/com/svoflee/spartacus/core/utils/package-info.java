@@ -14,12 +14,11 @@
  * limitations under the License.
  **************************************************************************
  *       
- * Product:  svoflee-spartacus
- * Creator:  svoflee@gmail.com 
  */
 
 /**
  *  spartacus - core - utils 模块，包括了通用的工具方法处理类
  */
+
 package com.svoflee.spartacus.core.utils;
 
