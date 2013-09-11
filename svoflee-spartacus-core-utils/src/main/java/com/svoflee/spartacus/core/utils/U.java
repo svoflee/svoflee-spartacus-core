@@ -33,10 +33,6 @@ import com.svoflee.spartacus.core.utils.security.MD5Utils;
  */
 public final class U {
 
-    public static void main(String[] args) {
-        U.readExit();
-    }
-
     /**
      * 返回classpath路径的文件Resource 的InputStream
      */
@@ -224,6 +220,10 @@ public final class U {
      */
     public static String buildFingerPrint(Object rawRowFingerPrint) {
         return MD5Utils.getMd5String(rawRowFingerPrint.toString());
+    }
+
+    public static void main(String[] args) {
+        U.readExit();
     }
 
 }
