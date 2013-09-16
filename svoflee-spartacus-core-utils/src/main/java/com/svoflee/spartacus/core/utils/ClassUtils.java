@@ -43,6 +43,10 @@ import org.springframework.util.TypeUtils;
  * Miscellaneous class utility methods. Mainly for internal use within the
  * framework; consider Jakarta's Commons Lang for a more comprehensive suite
  * of utilities.
+ * 
+ * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
+ * @since 1.0.0
+ * @version 1.0.0
  */
 public abstract class ClassUtils {
 
