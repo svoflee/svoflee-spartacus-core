@@ -28,13 +28,9 @@ public class AppException extends RuntimeException {
 
     private static final long serialVersionUID = -1163431146742652332L;
 
-    protected Throwable rootCause = null;
-
     private static final String messageKey = "spts.default.error.messagecode";
 
     private static final String message = "default error info";
-
-    private static final String notSupporttedException = "Not Supported In Version:";
 
     public AppException() {
         super();
@@ -51,14 +47,6 @@ public class AppException extends RuntimeException {
 
     public AppException(Throwable cause) {
         super(cause);
-    }
-
-    /**
-     * @param version
-     * @return
-     */
-    public static AppException notSupportedException(String version) {
-        return new AppException(notSupporttedException + version, new UnsupportedOperationException());
     }
 
 }
