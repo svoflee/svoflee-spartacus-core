@@ -18,9 +18,9 @@
 package com.svoflee.spartacus.core.utils.exception;
 
 /**
- * AppException 是系统应用公用异常基类，所有异常继承
+ * AppException 是系统应用公用异常基类，所有异常继承的基类
  * 
- * @author <a href="mailto:svoflee@gmail.com">svoflee</a>
+ * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
  * @since 1.0.0
  * @version 1.0.0
  */
