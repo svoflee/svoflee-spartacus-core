@@ -28,9 +28,9 @@ public class AppException extends RuntimeException {
 
     private static final long serialVersionUID = -1163431146742652332L;
 
-    private static final String messageKey = "spts.default.error.messagecode";
+    public static final String messageKey = "spts.default.error.messagecode";
 
-    private static final String message = "default error info";
+    public static final String message = "default error info";
 
     public AppException() {
         super();
