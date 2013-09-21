@@ -22,6 +22,13 @@ import java.lang.reflect.InvocationTargetException;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 
+/**
+ * Beans 是
+ * 
+ * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
+ * @since 1.0.0
+ * @version 1.0.0
+ */
 public class Beans extends BeanUtils {
 
     static {
