@@ -24,11 +24,11 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 
 import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+
+import com.svoflee.spartacus.core.log.Logger;
 
 /**
  * Properties文件载入工具类. 可载入多个properties文件,
@@ -40,7 +40,7 @@ import org.springframework.core.io.ResourceLoader;
  */
 public class PropertiesLoader {
 
-    private static Logger logger = LoggerFactory.getLogger(PropertiesLoader.class);
+    private static final Logger logger = Logger.getLogger(PropertiesLoader.class);
 
     private static ResourceLoader resourceLoader = new DefaultResourceLoader();
 
