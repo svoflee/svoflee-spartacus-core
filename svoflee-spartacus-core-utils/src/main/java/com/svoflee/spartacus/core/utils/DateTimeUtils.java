@@ -614,13 +614,9 @@ public final class DateTimeUtils {
      * @return
      */
     public static Date convertUTCtoLocalTime(String cityName, String utcDateTimeString) {
-        // String lv_dateFormateInLocalTimeZone = "";// Will hold the final converted date
         Date result = null;
-        // SimpleDateFormat lv_formatter;
         SimpleDateFormat lv_parser;
 
-        // String localTimezoneId = chooseTimezoneIdByCityName(cityName);
-        // create a new Date object using the UTC timezone
         lv_parser = new SimpleDateFormat(DateTimeUtils.YYYY_MM_DD_HH_MM_SS);
         lv_parser.setTimeZone(TimeZone.getTimeZone("UTC"));
         try {
@@ -629,19 +625,7 @@ public final class DateTimeUtils {
         catch (ParseException e) {
         }
 
-        // Set output format -
-        // prints "2007-10-25  18:35:07 EDT(-0400)"
-        // lv_formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z'('Z')'");
-        // System.out.println("convertUTCtoLocalTime " + cityName + ": " + "The Date in the UTC time zone(UTC) "
-        // + lv_formatter.format(lv_localDate));
-
-        // Convert the UTC date to Local timezone
-        // lv_formatter.setTimeZone(TimeZone.getTimeZone(localTimezoneId));
-        // lv_dateFormateInLocalTimeZone = lv_formatter.format(lv_localDate);
-        // System.out.println("convertUTCtoLocalTime: " + cityName + ": " + "The Date in the LocalTime Zone time zone "
-        // + lv_formatter.format(lv_localDate));
         return result;
-        // return lv_dateFormateInLocalTimeZone;
     }
 
     /**
@@ -704,13 +688,13 @@ public final class DateTimeUtils {
 
     public static Date getRangeDate(Date midDate, int unitRange, TsUnit aTsUnit, int addOrSub) {
         Date result = null;
-        if (aTsUnit == aTsUnit.YEARLY) {
+        if (aTsUnit == TsUnit.YEARLY) {
             result = DateUtils.addYears(midDate, unitRange * addOrSub);
         }
-        else if (aTsUnit == aTsUnit.DAILY) {
+        else if (aTsUnit == TsUnit.DAILY) {
             result = DateUtils.addDays(midDate, unitRange * addOrSub);
         }
-        else if (aTsUnit == aTsUnit.MONTHLY) {
+        else if (aTsUnit == TsUnit.MONTHLY) {
             result = DateUtils.addMonths(midDate, unitRange * addOrSub);
         }
         else {
