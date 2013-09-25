@@ -22,7 +22,7 @@ import java.security.MessageDigest;
 import com.svoflee.spartacus.core.log.Logger;
 
 /**
- * ShortUrl 是
+ * ShortUrl 是短地址连接的工具类
  * 
  * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
  * @since 1.0.0
