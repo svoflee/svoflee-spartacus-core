@@ -35,10 +35,6 @@ public abstract class EUtils {
 
     private static final String notSupporttedException = "Not Supported In Version:";
 
-    /**
-     * @param version
-     * @return
-     */
     public static AppException notSupportedException(String version) {
         return new AppException(notSupporttedException + version, new UnsupportedOperationException());
     }
@@ -59,9 +55,7 @@ public abstract class EUtils {
      * @param version
      */
     public static void throwNotSupportedException() {
-        AppException appEx = AppException.notSupportedException(" ALL Version ");
-
-        throw appEx;
+        throw notSupportedException(" ALL Version ");
     }
 
     public static void throwRuntimeException(Throwable ex, String msgKey, String... args) {
@@ -92,7 +86,7 @@ public abstract class EUtils {
     }
 
     public static void throwDefaultRuntimeException(Throwable e) {
-        throwRuntimeException(e, "system.error.default", null);
+        throwRuntimeException(e, AppException.messageKey, null);
     }
 
     public static void throwDefaultRuntimeException(String msg) {
