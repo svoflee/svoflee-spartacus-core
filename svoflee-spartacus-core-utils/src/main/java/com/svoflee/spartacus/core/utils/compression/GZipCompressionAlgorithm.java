@@ -32,7 +32,7 @@ import java.util.zip.GZIPOutputStream;
  */
 public class GZipCompressionAlgorithm implements CompressionAlgorithm {
 
-    int unit = 2048;
+    private int unit = 2048;
 
     public int getUnit() {
         return unit;
