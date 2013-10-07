@@ -44,6 +44,8 @@ import java.util.Map;
  * of assertion utilities.
  * 
  * @author kimchy
+ * @since 1.0.0
+ * @version 1.0.0
  */
 public abstract class Assert {
 
