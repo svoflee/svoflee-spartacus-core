@@ -1,6 +1,6 @@
 /*
- * Copyright (c)  http://www.svoflee.com All rights reserved.
- *  
+ * Copyright (c) http://www.svoflee.com All rights reserved.
+ **************************************************************************
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -12,19 +12,17 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- **************************************************************************
- *       
- * Product:  svoflee-spartacus
- * Author:   svoflee@gmail.com 
+ **************************************************************************      
  */
 
 package com.svoflee.spartacus.core.ui.annotation;
 
 /**
- * ShowType 是显示属性，设置对某个属性的显示设置
+ * ShowType 是显示属性，设置对某个属性的显示设置 *
  * 
- * @author svoflee(svoflee@gmail.com)
+ * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
  * @since 1.0.0
+ * @version 1.0.0
  */
 public enum ShowType {
 
