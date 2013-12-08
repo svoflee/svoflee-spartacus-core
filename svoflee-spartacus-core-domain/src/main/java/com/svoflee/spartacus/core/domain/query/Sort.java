@@ -17,13 +17,12 @@
 
 package com.svoflee.spartacus.core.domain.query;
 
-
 /**
  * Sort option for queries. You have to provide at least a list of properties to
  * sort for that must not include {@code null} or empty strings. The direction
  * defaults to {@value Sort#DEFAULT_DIRECTION}.
  * 
- * @author <a href="mailto:svoflee@gmail.com">svoflee</a>
+ * @author <a href="mailto:svoflee@gmail.com">svoflee@gmail.com</a>
  * @since 1.0.0
  * @version 1.0.0
  */
